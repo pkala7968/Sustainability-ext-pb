@@ -34,33 +34,17 @@ Works with (so far):
 
 ### Steps
 
-1. **Clone the Repository**
-```bash
-git clone https://github.com/pkala7968/Eco-rating-extension.git
-cd eco-rating-extension
-```
-2. **Install Dependencies:**
-```bash
-pip install -r requirements.txt
-```
-3. **Load the Extension into Chrome**
-- Open Chrome and go to `chrome://extensions/`
+1. **Download the Extension Folder**
+- Visit the [GitHub Repository](https://github.com/pkala7968/Sustainability-ext-pb
+- Click the green **"Code"** button, then select **"Download ZIP"**
+- Extract the ZIP file and locate the `extension/` folder
+2. **Load the Extension into Chrome**
+- Open Chrome and go to chrome://extensions/
 - Turn on the Developer Mode toggle (top right)
-- Click “Load unpacked”
-- In the file picker, select the `extension/` folder from this repo
->You should now see the Eco-Rating extension in your Chrome extension bar.
-4. **Run the Backend**
-- Create a `.env` file and add your Gemini API key:
-```ini
-GOOGLE_API_KEY=your_api_key_here
-```
-- Navigate to the backend directory and run the FastAPI backend:
-```bash
-cd backend
-uvicorn app:app --reload
-```
->This starts the backend on `http://localhost:8000`
-5. **Use the Extension**
+- Click "Load unpacked"
+- In the file picker, select the extracted extension/ folder
+> You should now see the Eco-Rating extension icon in your Chrome toolbar.
+3. **Use the Extension**
 - Go to any supported e-commerce site (e.g., Amazon, Flipkart)
 - Open the product page for any item
 - Click the Eco-Rating extension icon in your browser
