@@ -1,6 +1,7 @@
 # <img src="extension/icon.png" alt="logo" width="32" height="32"> Eco-Rating Chrome Extension
 
 A Chrome Extension that analyzes product listings and provides an **Eco-Friendliness Score** based on the materials used in the product. It uses a **LangChain-powered FastAPI backend** to evaluate the sustainability of product components.
+>The backend is hosted privately, but the extension is fully functional (buggy though 😅, still working on it...)
 
 Works with (so far):
 - Amazon
@@ -35,7 +36,7 @@ Works with (so far):
 ### Steps
 
 1. **Download the Extension Folder**
-- Visit the [GitHub Repository](https://github.com/pkala7968/Sustainability-ext-pb
+- Visit the [GitHub Repository](https://github.com/pkala7968/Sustainability-ext-pb)
 - Click the green **"Code"** button, then select **"Download ZIP"**
 - Extract the ZIP file and locate the `extension/` folder
 2. **Load the Extension into Chrome**
