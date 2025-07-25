@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+  }
+  
+  button#analyze-btn {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button#analyze-btn:hover {
+    background-color: #2e7d32;
+  }
+  
+  .result-card {
+    display: none;
+    margin-top: 15px;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    text-align: left;
+  }
+  
+  .result-card h2 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+    color: #555;
+    display: none;
+  }
+  
+  .result-card p {
+    font-size: 13px;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  #score {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 18px;
+  }  
+
+  .loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4CAF50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  }
+
+  #alternative {
+    margin-top: 1em;
+    color: green;
+    font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

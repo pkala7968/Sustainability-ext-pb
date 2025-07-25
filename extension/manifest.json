@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Eco Score",
+  "version": "1.0",
+  "description": "Rates product eco-friendliness on Amazon and Flipkart.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": [
+     "https://www.amazon.com/*",
+      "https://www.flipkart.com/*",
+      "https://www.ebay.com/*",
+      "https://www.walmart.com/*",
+      "https://www.target.com/*",
+      "http://localhost:8000/*",
+      "https://backend-wild-flower-7389.fly.dev/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.com/*",
+        "https://www.flipkart.com/*",
+        "https://www.ebay.com/*",
+        "https://www.walmart.com/*",
+        "https://www.target.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}

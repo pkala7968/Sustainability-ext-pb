@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco-Rating Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Eco-Rating</h1>
+    <button id="analyze-btn">Analyze Product</button>
+
+    <!-- Loading Spinner -->
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <div id="result" class="result-card" style="display: none;">
+      <div class="score-section">
+        <h2>Score:</h2>
+        <p id="score">–</p>
+      </div>
+
+      <div class="materials-section">
+        <h2>Materials:</h2>
+        <p id="materials">–</p>
+      </div>
+
+      <div class="reasoning-section">
+        <h2>Reasoning:</h2>
+        <p id="reasoning">–</p>
+      </div>
+      <div id="alternative" class="alt-section"></div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
