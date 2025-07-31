@@ -59,7 +59,7 @@ Works with (so far):
 
 ## Check It Out!
 
-![autopopup](img/autopopup.png)
+![autopopup](imgs/autopopup.png)
 
 ![initial](imgs/initial.png)
 
