@@ -2,16 +2,18 @@
   "manifest_version": 3,
   "name": "Eco Score",
   "version": "1.0",
-  "description": "Rates product eco-friendliness on Amazon and Flipkart.",
-  "permissions": ["scripting", "activeTab"],
+  "description": "Rates product eco-friendliness on ecommerce platforms.",
+  "permissions": ["scripting", "tabs", "activeTab"],
   "host_permissions": [
-     "https://www.amazon.com/*",
-      "https://www.flipkart.com/*",
-      "https://www.ebay.com/*",
-      "https://www.walmart.com/*",
-      "https://www.target.com/*",
-      "http://localhost:8000/*",
-      "https://backend-wild-flower-7389.fly.dev/*"
+    "https://*.amazon.com/*",
+    "https://*.amazon.in/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.flipkart.com/*",
+    "https://*.ebay.com/*",
+    "https://*.walmart.com/*",
+    "https://*.target.com/*",
+    "http://localhost:8000/*",
+    "https://backend-wild-flower-7389.fly.dev/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -20,13 +22,29 @@
     {
       "matches": [
         "https://www.amazon.com/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.co.uk/*",
         "https://www.flipkart.com/*",
         "https://www.ebay.com/*",
         "https://www.walmart.com/*",
         "https://www.target.com/*"
       ],
-      "js": ["content.js"],
+      "js": ["libs/fuse.min.js","content.js"],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-inject.js"],
+      "matches": [
+        "https://www.amazon.com/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.flipkart.com/*",
+        "https://www.ebay.com/*",
+        "https://www.walmart.com/*",
+        "https://www.target.com/*"
+      ]
     }
   ],
   "action": {

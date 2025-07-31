@@ -59,6 +59,8 @@ Works with (so far):
 
 ## Check It Out!
 
+![autopopup](img/autopopup.png)
+
 ![initial](imgs/initial.png)
 
 ![analysis](imgs/analysis.png)
